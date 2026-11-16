@@ -1,27 +1,38 @@
-# 🔤 Hindi Character-Level Transformer
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" width="100">
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://python.org)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c?logo=pytorch)](https://pytorch.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Educational](https://img.shields.io/badge/Purpose-Educational-orange)](#)
+<h1 align="center">Hindi Character-Level Transformer</h1>
 
-> **Build a tiny Hindi Language Model from scratch** — no Hugging Face, no pre-trained weights. Just pure PyTorch, Multi-Head Attention, and character-level modeling on Devanagari script.
+<p align="center">
+  <b>Build a tiny Hindi Language Model from scratch</b><br>
+  No Hugging Face • No pre-trained weights • Pure PyTorch + Devanagari
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c?logo=pytorch" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Purpose-Educational-orange" alt="Educational">
+</p>
+
+---
 
 A clean, educational implementation of a **decoder-only Transformer** trained to generate Hindi text one character at a time.
 
 ---
 
-## ✨ Highlights
+## Highlights
 
-- 🧠 **From-scratch Transformer** — Multi-Head Attention, causal masking, residual connections, LayerNorm, GELU FFN
-- 🇮🇳 **Hindi-first** — Character-level tokenizer that understands Devanagari (`U+0900–U+097F`)
-- 📦 **Minimal & readable** — ~300 lines of core code, heavily commented
-- 🚀 **Ready to run** — Train in minutes on CPU, generate instantly
-- 📊 **Loss curves & checkpoints** — Automatic saving of best model + training plot
+- **From-scratch Transformer** — Multi-Head Attention, causal masking, residual connections, LayerNorm, GELU FFN
+- **Hindi-first** — Character-level tokenizer that understands Devanagari (`U+0900–U+097F`)
+- **Minimal & readable** — ~300 lines of core code, heavily commented
+- **Ready to run** — Train in minutes on CPU, generate instantly
+- **Loss curves & checkpoints** — Automatic saving of best model + training plot
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input tokens
@@ -42,6 +53,7 @@ Linear Head → Vocab Logits
 ```
 
 **Default config** (tiny & educational):
+
 | Parameter       | Value |
 |-----------------|-------|
 | `d_model`       | 128   |
@@ -53,7 +65,7 @@ Linear Head → Vocab Logits
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 hindi-character-transformer/
@@ -73,7 +85,7 @@ hindi-character-transformer/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install
 
@@ -131,7 +143,7 @@ python generate.py --prompt "भारत"
 
 ---
 
-## 🧪 How the Tokenizer Works
+## How the Tokenizer Works
 
 ```python
 from src import SimpleTokenizer
@@ -152,7 +164,7 @@ print(tokenizer.decode([2, 27, 15, 3]))
 
 ---
 
-## 🧠 Key Learning Points
+## Key Learning Points
 
 | Concept                    | Where to look          |
 |---------------------------|------------------------|
@@ -169,7 +181,7 @@ This project is intentionally **tiny** so you can:
 
 ---
 
-## 📈 Expected Training Curve
+## Expected Training Curve
 
 With the default 20-sentence dataset the model quickly memorizes the patterns (loss ≈ 0.13–0.15). This is expected and useful for learning. For real generation quality you would need:
 
@@ -179,7 +191,7 @@ With the default 20-sentence dataset the model quickly memorizes the patterns (l
 
 ---
 
-## 🛠️ Customization
+## Customization
 
 ```bash
 # Bigger model
@@ -194,7 +206,7 @@ python generate.py --temperature 1.2 --top-k 20 --prompt "कल"
 
 ---
 
-## 📚 Inspired By
+## Inspired By
 
 - ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) (Vaswani et al.)
 - Andrej Karpathy’s nanoGPT / minGPT
@@ -202,23 +214,22 @@ python generate.py --temperature 1.2 --top-k 20 --prompt "कल"
 
 ---
 
-## 🤝 Contributing
-
-Pull requests are welcome! Ideas:
-- Add BPE / SentencePiece support
-- Support larger Indic datasets
-- Add beam search / nucleus sampling
-- Export to ONNX / TorchScript
-- Hindi → English translation head
-
----
-
-## 📄 License
+## License
 
 MIT License — feel free to use this for learning, teaching, or building upon.
 
 ---
 
-**Made with ❤️ for the Hindi NLP community**
+## Author
 
-If this helped you understand Transformers better, give it a ⭐!
+**Shivam Kumar**  
+AI/ML Engineer • Cybersecurity Enthusiast  
+Motihari, Bihar
+
+[GitHub](https://github.com/shivamkumar98017) • [Instagram](https://www.instagram.com/shivamkumar98017/) • [Email](mailto:shivamk34442@gmail.com)
+
+---
+
+<p align="center">
+  <sub>Made with ❤️ for the Hindi NLP community</sub>
+</p>
