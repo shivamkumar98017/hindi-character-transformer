@@ -212,3 +212,11 @@ Motihari, Bihar
 <sub>Made with ❤️ for the Hindi NLP community</sub>
 
 </div>
+
+---
+
+## 🌐 Connect With Me
+
+- **Instagram:** [www.instagram.com/codes.flow](https://www.instagram.com/codes.flow/)
+- **LinkedIn:** [www.linkedin.com/in/shivam-kumar-b24677431](https://www.linkedin.com/in/shivam-kumar-b24677431/)
+- **X:** [x.com/shivamk344007](https://x.com/shivamk344007)
